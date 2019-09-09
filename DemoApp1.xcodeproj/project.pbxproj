@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		67E2A7252321F14900F6027A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2A7242321F14900F6027A /* AppDelegate.swift */; };
-		67E2A7272321F14900F6027A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2A7262321F14900F6027A /* ViewController.swift */; };
 		67E2A72A2321F14900F6027A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E2A7282321F14900F6027A /* Main.storyboard */; };
 		67E2A72C2321F14A00F6027A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67E2A72B2321F14A00F6027A /* Assets.xcassets */; };
 		67E2A72F2321F14A00F6027A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E2A72D2321F14A00F6027A /* LaunchScreen.storyboard */; };
+		67E2A73A23220B8A00F6027A /* DeadlockExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2A73923220B8A00F6027A /* DeadlockExampleVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67E2A7212321F14900F6027A /* DemoApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E2A7242321F14900F6027A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67E2A7262321F14900F6027A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67E2A7292321F14900F6027A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67E2A72B2321F14A00F6027A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67E2A72E2321F14A00F6027A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67E2A7302321F14A00F6027A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67E2A73923220B8A00F6027A /* DeadlockExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlockExampleVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,38 @@
 		67E2A7232321F14900F6027A /* DemoApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				67E2A73823220B0700F6027A /* Resources */,
+				67E2A73723220AD400F6027A /* View */,
+				67E2A73623220ABA00F6027A /* Controller */,
 				67E2A7242321F14900F6027A /* AppDelegate.swift */,
-				67E2A7262321F14900F6027A /* ViewController.swift */,
-				67E2A7282321F14900F6027A /* Main.storyboard */,
-				67E2A72B2321F14A00F6027A /* Assets.xcassets */,
-				67E2A72D2321F14A00F6027A /* LaunchScreen.storyboard */,
 				67E2A7302321F14A00F6027A /* Info.plist */,
 			);
 			path = DemoApp1;
+			sourceTree = "<group>";
+		};
+		67E2A73623220ABA00F6027A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67E2A73923220B8A00F6027A /* DeadlockExampleVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67E2A73723220AD400F6027A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67E2A72D2321F14A00F6027A /* LaunchScreen.storyboard */,
+				67E2A7282321F14900F6027A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67E2A73823220B0700F6027A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67E2A72B2321F14A00F6027A /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67E2A7272321F14900F6027A /* ViewController.swift in Sources */,
 				67E2A7252321F14900F6027A /* AppDelegate.swift in Sources */,
+				67E2A73A23220B8A00F6027A /* DeadlockExampleVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
